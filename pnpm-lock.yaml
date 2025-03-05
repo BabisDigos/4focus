@@ -18,14 +18,14 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0(solid-js@1.9.5)
       '@solid-primitives/bounds':
-        specifier: ^0.0.119
-        version: 0.0.119(solid-js@1.9.5)
+        specifier: ^0.1.0
+        version: 0.1.0(solid-js@1.9.5)
       '@solid-primitives/resize-observer':
-        specifier: ^2.0.23
+        specifier: ^2.1.0
         version: 2.1.0(solid-js@1.9.5)
       '@solid-primitives/storage':
-        specifier: ^2.1.2
-        version: 2.1.4(solid-js@1.9.5)
+        specifier: ^4.3.1
+        version: 4.3.1(solid-js@1.9.5)
       '@solidjs/router':
         specifier: ^0.15.0
         version: 0.15.3(solid-js@1.9.5)
@@ -1112,8 +1112,8 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@solid-primitives/bounds@0.0.119':
-    resolution: {integrity: sha512-A1PW5+z60JwukgrUujWYZ89wJVMk6EfJuC/HCJyBIPusyb4fGj5my56InV8vOqrTmj8c3NSmAeBOvKDE5iGAog==}
+  '@solid-primitives/bounds@0.1.0':
+    resolution: {integrity: sha512-mPci7ji6cvQIjexYaWgy75mLkip1YxlUijFa8B1PkuYfL13FtGrl1AzPvA2vq8fV5LNysuq3ghwgUFFwaqAR6w==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -1157,22 +1157,20 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/static-store@0.0.6':
-    resolution: {integrity: sha512-PtvkbbucbjT+9p95pksOciG9gOnCtJz4IUyAKX1Ld7YwI+QgtPTo0Wuxs8gNbNtLtoDv5PNv5t4YRzUyl0fwdg==}
-    peerDependencies:
-      solid-js: ^1.6.12
-
   '@solid-primitives/static-store@0.1.0':
     resolution: {integrity: sha512-6Coau0Kv/dF83UQpbBzc+gnJafOQAPe2jCbB4jmTK5UocsR5cWmFBVRm3kin+nZFVaO4WkuELw0cKANWgTVh8Q==}
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/storage@2.1.4':
-    resolution: {integrity: sha512-ziGRMSPi2PDnY6L6YPGWYnzmUEPIwO0PaDT9N1WNW9P2tUMMhgqKLXBrYfjytpjwY3UM6kIrbONMRADjyGtzAw==}
+  '@solid-primitives/storage@4.3.1':
+    resolution: {integrity: sha512-xAJsY2pvXrAaCai4N2grmWY3xh5om9suTDVzGkRF5JBpDzs3Apk+xIovdTErbW0iCzXIEefENXb9xmSzdjuLYA==}
     peerDependencies:
+      '@tauri-apps/plugin-store': '*'
       solid-js: ^1.6.12
-      solid-start: '>=0.2.26'
+      solid-start: '*'
     peerDependenciesMeta:
+      '@tauri-apps/plugin-store':
+        optional: true
       solid-start:
         optional: true
 
@@ -4425,11 +4423,11 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@solid-primitives/bounds@0.0.119(solid-js@1.9.5)':
+  '@solid-primitives/bounds@0.1.0(solid-js@1.9.5)':
     dependencies:
       '@solid-primitives/event-listener': 2.4.0(solid-js@1.9.5)
       '@solid-primitives/resize-observer': 2.1.0(solid-js@1.9.5)
-      '@solid-primitives/static-store': 0.0.6(solid-js@1.9.5)
+      '@solid-primitives/static-store': 0.1.0(solid-js@1.9.5)
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
       solid-js: 1.9.5
 
@@ -4478,17 +4476,12 @@ snapshots:
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
       solid-js: 1.9.5
 
-  '@solid-primitives/static-store@0.0.6(solid-js@1.9.5)':
-    dependencies:
-      '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
-      solid-js: 1.9.5
-
   '@solid-primitives/static-store@0.1.0(solid-js@1.9.5)':
     dependencies:
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
       solid-js: 1.9.5
 
-  '@solid-primitives/storage@2.1.4(solid-js@1.9.5)':
+  '@solid-primitives/storage@4.3.1(solid-js@1.9.5)':
     dependencies:
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
       solid-js: 1.9.5
