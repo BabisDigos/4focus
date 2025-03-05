@@ -1,5 +1,5 @@
-import { createHandler } from "@solidjs/start/entry";
-import { StartServer } from "@solidjs/start/server";
+// @refresh reload
+import { createHandler, StartServer } from "@solidjs/start/server";
 
 export default createHandler(() => (
   <StartServer
@@ -17,6 +17,7 @@ export default createHandler(() => (
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&display=swap"
             as="style"
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             // eslint-disable-next-line solid/event-handlers
             onload="this.onload=null;this.rel='stylesheet'"

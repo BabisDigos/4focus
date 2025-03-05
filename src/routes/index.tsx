@@ -22,10 +22,11 @@ const getSpaceCookie = (): Space => {
     throw new Error("No request event found");
   }
 
-  const parsedCookies = parseCookies(event);
-  const spaceCookie = parsedCookies["focusly_space"];
-
-  return spaceCookie ? (spaceCookie as Space) : "lofi_girl";
+  // const parsedCookies = parseCookies(event);
+  // const spaceCookie = parsedCookies["focusly_space"];
+  //
+  // return spaceCookie ? (spaceCookie as Space) : "lofi_girl";
+  return "lofi_girl";
 };
 
 export default function Home() {

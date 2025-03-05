@@ -17,7 +17,8 @@ export const SettingsContext = createContext<SettingsContextProps>();
 
 const initialAlarmSound = (): Alarm => ({
   value: "bells",
-  url: "bells.wav",
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  url: "bells.wav" as any,
 });
 
 const initialBgColor = (): BgColor => ({

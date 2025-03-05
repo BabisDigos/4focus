@@ -1,6 +1,6 @@
 import { Tooltip as KobalteTooltip } from "@kobalte/core";
 import { Component, JSX, Show, splitProps } from "solid-js";
-import { TooltipRootProps } from "@kobalte/core/dist/types/tooltip";
+// import { TooltipRootProps } from "@kobalte/core/dist/types/tooltip";
 import styles from "./Tooltip.module.css";
 
 export type TooltipProps = {
@@ -8,7 +8,9 @@ export type TooltipProps = {
   description: string | JSX.Element;
   arrowSize?: number;
   animate?: boolean;
-} & TooltipRootProps;
+  // } & TooltipRootProps;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+} & any;
 
 export const Tooltip: Component<TooltipProps> = (props) => {
   const [local, rest] = splitProps(props, [

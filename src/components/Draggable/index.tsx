@@ -11,7 +11,6 @@ import { createElementBounds } from "@solid-primitives/bounds";
 
 import { Note, Tab, XOR } from "~/types";
 import { usePanelContext } from "~/providers";
-import { useScreenBounds } from "~/stores";
 
 type DraggableProps = {
   tab: Tab;

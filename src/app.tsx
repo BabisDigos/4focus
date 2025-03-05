@@ -1,8 +1,11 @@
 // @refresh reload
 import { Router } from "@solidjs/router";
-import { FileRoutes, clientOnly } from "@solidjs/start";
+import { clientOnly } from "@solidjs/start";
+import { FileRoutes } from "@solidjs/start/router";
 import { ErrorBoundary, Suspense } from "solid-js";
 import { Toaster } from "solid-toast";
+
+import "./app.css"; // TODO: check
 
 const SettingsProvider = clientOnly(() =>
   import("~/providers").then((m) => ({ default: m.SettingsProvider })),
