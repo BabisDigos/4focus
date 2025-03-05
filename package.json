@@ -22,9 +22,9 @@
     "typescript-eslint": "^8.20.0"
   },
   "dependencies": {
-    "@kobalte/core": "^0.12.1",
-    "@modular-forms/solid": "^0.20.0",
-    "@neodrag/solid": "^2.0.3",
+    "@kobalte/core": "^0.13.9",
+    "@modular-forms/solid": "^0.25.1",
+    "@neodrag/solid": "^2.3.0",
     "@solid-primitives/bounds": "^0.0.119",
     "@solid-primitives/resize-observer": "^2.0.23",
     "@solid-primitives/storage": "^2.1.2",
